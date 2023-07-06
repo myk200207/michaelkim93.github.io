@@ -932,14 +932,16 @@ ul,ol{
     animation:java 3s;
 }
 .c{
-    width:60%;
+    width:60%;  
     font-size:small;
     animation:c 3s;
-}
-.html{
+}   
+.html {
+   
     width:70%;
     font-size:small;
     animation:html 3s;
-
 }
-
+html{
+    scroll-behavior: smooth !important;
+}
