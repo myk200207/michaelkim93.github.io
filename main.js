@@ -8,7 +8,7 @@ function wordpopup(){
     document.getElementById("popup3").classList.toggle("active");
 }
 function pagepopup(){
-    document.getElementById("popup  4").classList.toggle("active");
+    document.getElementById("popup4").classList.toggle("active");
 }
 function sigpopup(){
     document.getElementById("popup5").classList.toggle("active");

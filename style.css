@@ -639,6 +639,9 @@ body{
 .profilePic{
     height:250px;
     width:250px;
+    background-image: url(ProPic.png);
+    background-position: center;
+    background-size:cover;
     border:2px solid white;
     border-radius:50%;
 }
@@ -655,7 +658,6 @@ body{
 }
 .welcome{
     padding-bottom:10%;
-    
     font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size:20px;
     font-weight:300;
