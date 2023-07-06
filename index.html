@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta http-equiv = "refresh" content = "3"> -->
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1611a584a7.js" crossorigin="anonymous"></script>
+        
+        <title>Michael Kim's Web page</title>
+    </head>
+    <body>
+        <!--Header-->
+        <div id ="home"></div>
+        <section class = "header_top" >
+            <nav id="homepage"><a href='#home'>Michael's Homepage</a></nav>
+                <div class="mainNav">
+                    <ul>
+                        <!-- <li><a href='#home'>Home</a></li> -->
+                        <li><a href='#Introduction'>Home</a></li>
+                        <li><a href='#skillsDiv'>Skills</a></li>
+                        <li><a href='#projects'>Projects</a></li>
+                        <li><a href='#timeline'>Timeline</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href='Resume.docx'download>Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--End of Header-->
+
+        <!--About introduction-->
+        <section id="Introduction" class="Introduction">
+            <div class ="IntroductionDiv">
+                <div class="welcome">Welcome!</h1></div>
+                <img class="profilePic" id="profilePic" src ="profilepic.png">
+                
+                <h1 class="myName">Michael Kim</h1>
+                <br>
+                <div class="About">
+                <h2 ><em>UVA 2023 | Software Engineer | Air Force</em></h2>
+                <br>
+                <p>I'm a graduate from UVA's class of 2023. 
+                    My passion include software design and development, data management,
+                    artificial intelligence, machine learning, deep learning, and more. 
+                 </p>
+                </div>
+                
+        </section>
+        <!--Introduction-->
+
+        <!--Skills-->
+        <div id="skillsDiv" class="skillsDiv">
+            <h1 class="skilltitle">Skill</h1>
+            <h3 class="skillintro">Here are a few things I've learned..</h3>
+        <section class="skills">
+            <div class ="skillprofile">
+                <h1>Profile</h1>
+                <p>I was exposed to several programming languages, softwares, processors, and etc. I am adept at test development,
+                    webpage development, software development, database management, computer architecture, and operating system.
+                    </p>
+                
+                <h1>Languages</h1>
+                 <p>Java,Python , C , C++, JavaScript, HTML,CSS,PHP,R,JSON,SQL,SQLITE.</p>
+                <h1>Framework</h1>                    
+                    <p>Linux,Git,JavaFX,Selenium,Angular,SceneBuilder,Bootstrap,MVC.</p>
+            </div>
+            <div  class="skillbars">
+                <h1>Language Proficiency</h1>
+                <li>
+                    <h3>Python</h3>
+                    <span class="bar"><span class="python">90%</span></span>
+                </li>
+                <li><h3>Java</h3>
+                    <span class="bar"><span class="java">90%</span></span>
+                </li>
+                <li><h3>HTML/CSS</h3>
+                    <span class="bar"><span class="html">70%</span></span>
+                </li>
+                <li><h3>C</h3>
+                    <span class="bar"><span class="c">60%</span></span>
+                </li>
+            
+            </div>
+        </section>
+    </div>
+        <!--End of Skills-->
+
+        <!--Projects-->
+
+        <section id="projects">
+            <div class="pPad">
+                <h1>Projects</h1>
+                <h2>My Hard Work...</h2>
+            </div>
+
+            <div>
+              
+            <div class="busContainer" onclick="Buspopup()" > 
+                    <div class="busOverlay" >
+                        <div class="busContent">
+                            <h1>UVA Busline</h1>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="govContainer" onclick="Govpopup()">
+               
+                    <div class="govOverlay">
+                        <div class="govContent">
+                            <h1>Apportionment App</h1>
+                        </div>
+                    </div>
+            </div>
+            <div class="wordContainer" onclick="wordpopup()">
+                    <div class="wordOverlay">
+                        <div class="wordContent">
+                            <h1>Wordle Replica</h1>
+                            
+                        </div>
+                    </div>
+            </div>
+            <div class="pageContainer" onclick="pagepopup()">
+                    <div class="pageOverlay">
+                        <div class="pageContent">
+                            <h1>Page Table</h1>
+                            
+                        </div>
+                    </div>
+            </div>
+            <div class="sigContainer" onclick="sigpopup()"> 
+                    <div class="sigOverlay">
+                        <div class="sigContent">
+                            <h1>Signal Handler</h1>
+
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    
+        </section>
+        <!--End of Projects-->
+        <!-- popups -->
+        <div class="popups">
+            <div class="popup1" id="popup1">
+                <div class="overlay1"></div>
+                <div class="content1">
+                    <div class="close-btn1" onclick="Buspopup()">&times;</div>
+                    <h1 class="ph1">UVA Bus line App</h1>
+                    <div class="pd">Built an app that extracts and dissects a JSON file containing
+                        UVA’s bus routes and stops. Organized each stops into the proper
+                        bus line, and tranfered the data to SQLite. Outputs proper bus line
+                        to take to get to the correct stop. 
+                        <br>
+                        <br>
+                        Github : 
+                        <br>
+                        <a href='#'>www.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup2" id="popup2">
+                <div class="overlay2"></div>
+                <div class="content2">
+                    <div class="close-btn2" onclick="Govpopup()">&times;</div>
+                    <h1 class="ph1">Apportionment App</h1>
+                    <div class="pd">Built a comand-line user-interactive app that output
+                        the correct apportionment of each state by its population. User has the 
+                        option to choose Hamilton,Jefferson, and Hungtington's apportionment method 
+                        to assign state's number of representatives. This app is enabled to organize 
+                        dissect CSV and EXCEL files that contain state's population.
+                        <br>
+                        <br>
+                        Github : 
+                        <br>
+                        <a href='#'>www.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup3" id="popup3">
+                <div class="overlay3"></div>
+                <div class="content3">
+                    <div class="close-btn3" onclick="wordpopup()">&times;</div>
+                    <h1 class="ph1">Wordle Replica</h1>
+                    <div class="pd">Built a GUI wordle replica using Java, JavaFX, and scenebuilder using
+                        top-bottom approach and 3-layer MVC architecture.
+                        <br>
+                        <br>
+                        Github : 
+                        <br>
+                        <a href='#'>www.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup4" id="popup4">
+                <div class="overlay4"></div>
+                <div class="content4">
+                    <div class="close-btn4" onclick="pagepopup()">&times;</div>
+                    <h1 class="ph1">Page Table</h1>
+                    <div class="pd"> Built an app that mimicks the memory storage in OS. The app takes in 
+                        a virtual address, given by the user, translates, and stores it into a physical address. 
+                        The app outputs the physical address location upon user's request. 
+                        <br>
+                        <br>
+                        Github : 
+                        <br>
+                        <a href='#'>www.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup5" id="popup5">
+                <div class="overlay5"></div>
+                <div class="content5">
+                    <div class="close-btn5" onclick="sigpopup()">&times;</div>
+                    <h1 class="ph1">Signal Handler</h1>
+                    <div class="pd"> Built an app that mimicks the memory storage in OS. The app takes in 
+                        a virtual address, given by the user, translates, and stores it into a physical address. 
+                        The app outputs the physical address location upon user's request. 
+                        <br>
+                        <br>
+                        Github : 
+                        <br>
+                        <a href='#'>www.</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- popups -->
+        <!--Timeline-->
+        <section id ="timeline">
+        <div class="timelineContainer">
+        <div class="timelineDiv">
+            <h1>Timeline</h1>
+            <h2>My story began..</h2>
+        </div>
+        <div  class="timeline">
+        <ul>
+            <li>
+                <div class="timeContent">
+                    <h1 class="timeeven">United States Airforce</h1>
+                    <h2>2017-2021</h2>
+                    <p>368 Expenditionary Medical Squad Medic</p>
+                </div>
+            </li>
+            <li>
+                <div class="timeContent">
+                    <h1 class="timeodd">University of Virginia</h1>
+                    <h2>2021-2023</h2>
+                    <p>Bachelor of Computer Science</p>
+                </div>
+            </li>
+            <li>
+                <div class="timeContent">
+                    <h1 class="timeeven">More to come..<h1>
+                    <!-- <h2>2017-2021</h2>
+                    <p>368 Expenditionary Medical Squad Medic</p> -->
+                </div>
+            </li>
+        </ul>
+       </div>
+    </div>
+</div>
+    </section>      
+        <!--End of TimeLine-->
+        <!--Contact Me-->
+        <section id="contact">
+            <h1 class="contactme">Contact</h1>
+            <h2 class="contactme2">We should stay in touch!</h2>
+            <div id="conContainer">
+                <div class ="divContainer">
+                    <div class ="DivContainer2">
+                        <i class="fa-solid fa-address-book fa-4x" style="color: #fff;"></i>
+                        <h1>Contact</h1>
+                        <h2>Phone :<span> 703-825-0708</span></h2>
+                    </div>
+                </div>
+                <div class = "divContainer">
+                    <div class="divContainer2"> 
+                        <i class="fa-regular fa-envelope fa-4x" style="color: #fff;"></i>
+                    <h1>Email</h1>
+                    <h2>myk200207@gmail.com</h2>
+                    <h2>yk4vs@virginia.edu</h2>
+                    </div>
+                </div>
+
+                <div class = "divContainer">
+                    <div class="DivContainer2">
+                        <i class="fa-brands fa-linkedin fa-4x" style="color: #fff;"></i> 
+                    <h1>LinkedIn</h1>
+                    <h2>Find me on Linkedin</h2>
+                    <a href="#" target ="_blank">LinkedIn Profile</a>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="cfooter"></div>
+        </section>
+        <!--End of Contact Me-->
+       <script src="main.js"></script>
+    </body>
+</html>
